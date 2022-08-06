@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="463.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentManagementFormController">
+   <cursor>
+      <Cursor fx:constant="DISAPPEAR" />
+   </cursor>
+   <Label layoutX="25.0" layoutY="8.0" prefHeight="55.0" prefWidth="119.0" text="Student" textAlignment="CENTER" textFill="#d35400" AnchorPane.leftAnchor="25.0">
+      <font>
+         <Font name="System Bold Italic" size="29.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtStuId" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="81.0" prefHeight="25.0" prefWidth="145.0" promptText="Student Id" unFocusColor="BLACK">
+      <cursor>
+         <Cursor fx:constant="S_RESIZE" />
+      </cursor>
+   </JFXTextField>
+   <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="133.0" prefHeight="25.0" prefWidth="418.0" promptText="Full Name" unFocusColor="BLACK" AnchorPane.leftAnchor="25.0">
+      <cursor>
+         <Cursor fx:constant="S_RESIZE" />
+      </cursor>
+   </JFXTextField>
+   <JFXTextField fx:id="txtAddress" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="231.0" prefHeight="25.0" prefWidth="418.0" promptText="Address" unFocusColor="BLACK" AnchorPane.leftAnchor="25.0">
+      <cursor>
+         <Cursor fx:constant="S_RESIZE" />
+      </cursor>
+   </JFXTextField>
+   <JFXButton layoutX="298.0" layoutY="279.0" onAction="#saveStudentOnAction" prefHeight="36.0" prefWidth="145.0" style="-fx-background-color: #10ac84;" text="Save" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXTextField fx:id="txtContact" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="182.0" prefHeight="25.0" prefWidth="145.0" promptText="Contact Number" unFocusColor="BLACK">
+      <cursor>
+         <Cursor fx:constant="S_RESIZE" />
+      </cursor>
+   </JFXTextField>
+   <JFXTextField fx:id="txtParId" focusColor="BLACK" labelFloat="true" layoutX="234.0" layoutY="81.0" prefHeight="25.0" prefWidth="210.0" promptText="Parent Id" unFocusColor="BLACK">
+      <cursor>
+         <Cursor fx:constant="S_RESIZE" />
+      </cursor>
+   </JFXTextField>
+   <Separator layoutX="25.0" layoutY="54.0" prefHeight="4.0" prefWidth="337.0" />
+</AnchorPane>

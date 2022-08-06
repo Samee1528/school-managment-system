@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LibrarianMainFormController">
+   <children>
+      <StackPane prefHeight="417.0" prefWidth="796.0">
+         <children>
+            <BorderPane prefHeight="446.0" prefWidth="712.0">
+               <left>
+                  <VBox alignment="CENTER" prefHeight="494.0" prefWidth="187.0" style="-fx-background-color: #0a3d62;" BorderPane.alignment="BOTTOM_RIGHT">
+                     <children>
+                        <JFXButton onAction="#bookOnAction" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: #d1d8e0;" text="Book Management" VBox.vgrow="SOMETIMES">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" onAction="#readerOnAction" prefHeight="43.0" prefWidth="163.0" style="-fx-background-color: #a5b1c2;" text="Reader Management" VBox.vgrow="SOMETIMES">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <StackPane fx:id="panlRoot" prefHeight="492.0" prefWidth="750.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <AnchorPane prefHeight="40.0" prefWidth="1191.0" style="-fx-background-color: #d1d8e0;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #fed330;">
+                           <children>
+                              <Label layoutX="47.0" layoutY="4.0" prefHeight="34.0" prefWidth="92.0" text="Librarian">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="lblDate" layoutX="613.0" layoutY="6.0" prefHeight="30.0" prefWidth="85.0" text="2021-06-28">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTime" layoutX="720.0" layoutY="6.0" prefHeight="30.0" prefWidth="100.0" text=" 10:37:26 ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

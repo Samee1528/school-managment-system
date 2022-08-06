@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="1035.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParentDetailsFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="6.0" text="Parent Details" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="806.0">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="83.0" onAction="#openParentManagementFormOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #2980b9;" text="Add Parent" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="83.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="198.0" layoutY="83.0" onAction="#selectParentOnAction" prefHeight="31.0" prefWidth="327.0" promptText="Search Parent Id" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="510.0">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor></TextField>
+      <TableView fx:id="tblParent" layoutX="9.0" layoutY="132.0" prefHeight="331.0" prefWidth="1017.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="132.0">
+         <columns>
+            <TableColumn fx:id="colParId" prefWidth="161.0" text="Parent Id" />
+            <TableColumn fx:id="colName" prefWidth="237.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="268.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="210.0" text="Contact Number" />
+            <TableColumn fx:id="colUpdate" minWidth="0.0" prefWidth="139.0" text="Update" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="746.0" layoutY="469.0" onAction="#deleteParentOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="159.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="14.0" layoutY="55.0" prefHeight="0.0" prefWidth="1010.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" />
+      <JFXButton layoutX="898.0" layoutY="469.0" onAction="#openParentUpdateFormOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #4834d4;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="9.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

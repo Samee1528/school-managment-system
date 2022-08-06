@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="1035.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubjectDetailsFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="14.0" prefHeight="50.0" prefWidth="266.0" text="Subject Details " AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="756.0">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="82.0" onAction="#openSubjectManagementFormOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #2980b9;" text="Add Subject" textFill="WHITE" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="191.0" layoutY="82.0" onAction="#selectSubjectOnAction" prefHeight="31.0" prefWidth="327.0" promptText="Search Subject Id" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="517.0">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor></TextField>
+      <TableView fx:id="tblSubject" layoutX="13.0" layoutY="142.0" prefHeight="316.0" prefWidth="1005.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="142.0">
+         <columns>
+            <TableColumn fx:id="colSubId" prefWidth="180.0" text="Subject Id" />
+            <TableColumn fx:id="colSchId" prefWidth="198.0" text="School Id" />
+            <TableColumn fx:id="colName" prefWidth="445.0" text="Subject Name" />
+            <TableColumn fx:id="colUpdate" minWidth="0.0" prefWidth="181.0" text="Update" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="725.0" layoutY="466.0" onAction="#deleteSubjectOnAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #ee5253;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="14.0" layoutY="63.0" prefHeight="0.0" prefWidth="1005.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" />
+      <JFXButton layoutX="882.0" layoutY="466.0" onAction="#openSubjectUpdateFormOnAction" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: #2980b9;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

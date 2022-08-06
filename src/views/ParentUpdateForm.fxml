@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="326.0" prefWidth="413.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParentUpdateFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="2.0" text="Update Parent" textFill="#d35400">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtParId" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="59.0" onAction="#selectParentOnAction" prefHeight="25.0" prefWidth="145.0" promptText="Parent Id" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="116.0" prefHeight="25.0" prefWidth="377.0" promptText="Full Name" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="228.0" prefHeight="25.0" prefWidth="377.0" promptText="Address" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="173.0" prefHeight="25.0" prefWidth="145.0" promptText="Contact Number" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="263.0" layoutY="273.0" onAction="#updateParentOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #4834d4;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="13.0" layoutY="44.0" prefHeight="3.0" prefWidth="310.0" />
+   </children>
+</AnchorPane>

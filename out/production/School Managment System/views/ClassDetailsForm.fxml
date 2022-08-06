@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="1035.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassDetailsFormController">
+   <children>
+      <Label layoutX="13.0" prefHeight="50.0" prefWidth="255.0" text="Class Details " AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="767.0">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblClass" layoutX="13.0" layoutY="122.0" prefHeight="324.0" prefWidth="1009.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="122.0">
+         <columns>
+            <TableColumn fx:id="colClassId" prefWidth="235.0" text="Class Id" />
+            <TableColumn fx:id="colName" prefWidth="311.0" text="Class Name" />
+            <TableColumn fx:id="colTeaId" prefWidth="249.0" text="Teacher Id" />
+            <TableColumn fx:id="colSchId" prefWidth="213.0" text="School Id" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="13.0" layoutY="72.0" onAction="#openClassManagementFormOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #2980b9;" text="Add Class" textFill="WHITE" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="870.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="197.0" layoutY="72.0" onAction="#selectClassOnAction" prefHeight="31.0" prefWidth="327.0" promptText="Search" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="511.0">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor></TextField>
+      <JFXButton layoutX="730.0" layoutY="456.0" onAction="#deleteClassOnAction" prefHeight="8.0" prefWidth="130.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="13.0" layoutY="41.0" prefHeight="1.0" prefWidth="1009.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" />
+      <JFXButton layoutX="882.0" layoutY="456.0" onAction="#openClassUpdateFormOnAction" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: #2980b9;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

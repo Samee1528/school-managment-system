@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="326.0" prefWidth="439.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParentsManagementFormController">
+   <children>
+      <Label layoutX="23.0" text="Parents" textFill="#d35400">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtParId" focusColor="BLACK" labelFloat="true" layoutX="23.0" layoutY="70.0" prefHeight="25.0" prefWidth="137.0" promptText="Parent Id" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="23.0" layoutY="121.0" prefHeight="25.0" prefWidth="390.0" promptText="Full Name" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="BLACK" labelFloat="true" layoutX="23.0" layoutY="228.0" prefHeight="25.0" prefWidth="390.0" promptText="Address" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" focusColor="BLACK" labelFloat="true" layoutX="23.0" layoutY="177.0" prefHeight="25.0" prefWidth="137.0" promptText="Contact Number" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="263.0" layoutY="271.0" onAction="#saveParentOnAction" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #10ac84;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="23.0" layoutY="45.0" prefHeight="2.0" prefWidth="314.0" />
+   </children>
+</AnchorPane>

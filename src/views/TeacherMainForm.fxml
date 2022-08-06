@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherMainFormController">
+   <children>
+      <StackPane prefHeight="417.0" prefWidth="796.0">
+         <children>
+            <BorderPane prefHeight="446.0" prefWidth="712.0">
+               <left>
+                  <VBox alignment="CENTER" prefHeight="380.0" prefWidth="156.0" style="-fx-background-color: #2c2c54;" BorderPane.alignment="BOTTOM_RIGHT">
+                     <children>
+                        <JFXButton onAction="#classOnAction" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #FFC312;" text="Class Management" VBox.vgrow="SOMETIMES">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#subjectOnAction" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #FFC312;" text="Subject Management" VBox.vgrow="SOMETIMES">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" onAction="#examOnAction" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: #FFC312;" text="Exam Management">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" onAction="#resultOnAction" prefHeight="34.0" prefWidth="147.0" style="-fx-background-color: #FFC312;" text="Result Management">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" onAction="#studentAttendanceOnAction" prefHeight="32.0" prefWidth="148.0" style="-fx-background-color: #FFC312;" text="Student Attendance">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" onAction="#timeTableOnAction" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #FFC312;" text="Time Table Management" VBox.vgrow="SOMETIMES">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <StackPane fx:id="panlRoot" prefHeight="492.0" prefWidth="750.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <AnchorPane prefHeight="9.0" prefWidth="1191.0" style="-fx-background-color: #f6e58d;" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: #fed330;">
+                           <children>
+                              <Label layoutX="47.0" layoutY="4.0" text="Teacher">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="lblDate" layoutX="712.0" layoutY="3.0" prefHeight="30.0" prefWidth="88.0" text=" 2021-06-28" AnchorPane.leftAnchor="712.0" AnchorPane.rightAnchor="391.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="lblTime" layoutX="810.0" layoutY="3.0" prefHeight="30.0" prefWidth="82.0" text=" 10:37:26" AnchorPane.rightAnchor="299.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

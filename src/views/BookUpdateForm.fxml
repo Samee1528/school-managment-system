@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="413.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookUpdateFormController">
+   <cursor>
+      <Cursor fx:constant="DISAPPEAR" />
+   </cursor>
+   <children>
+      <Label layoutX="25.0" layoutY="8.0" prefHeight="55.0" prefWidth="193.0" text="Update Book" textAlignment="CENTER" textFill="#d35400" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtBookId" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="81.0" onAction="#selectBookOnAction" prefHeight="25.0" prefWidth="145.0" promptText="Book Id" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="133.0" prefHeight="25.0" prefWidth="369.0" promptText="Book Name" unFocusColor="BLACK" AnchorPane.leftAnchor="25.0">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDate" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="231.0" prefHeight="25.0" prefWidth="369.0" promptText="Issue Date" unFocusColor="BLACK" AnchorPane.leftAnchor="25.0">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCategory" focusColor="BLACK" labelFloat="true" layoutX="25.0" layoutY="182.0" prefHeight="25.0" prefWidth="145.0" promptText="Category" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtReaId" focusColor="BLACK" labelFloat="true" layoutX="183.0" layoutY="81.0" prefHeight="25.0" prefWidth="210.0" promptText=" Reader Id" unFocusColor="BLACK">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </JFXTextField>
+      <Separator layoutX="25.0" layoutY="54.0" prefHeight="4.0" prefWidth="294.0" />
+      <JFXButton layoutX="264.0" layoutY="275.0" onAction="#updateBookOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #2980b9;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
